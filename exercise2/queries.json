@@ -1,0 +1,34 @@
+// QUERIES: Perform the following statements
+// 1.1. Recover the minimum value of the field 'pop' for all cities.
+db.city.aggregate([{$group:{_id: "$city", MinValuePop:{$min: "$pop"}}}]);
+
+
+// 1.2. Retrieve all the zip codes in the city "Springfield". How many?
+// All zip codes
+db.city.find({"city": /^springfield$/i}, {"_id": 1, "city": 1});
+
+// Number of zip codes
+db.city.find({"city": /^springfield$/i}, {"_id": 1, "city": 1}).count();
+
+
+// 1.3. Retrieve the number of cities in state "GA" with less than equal 1500 population.
+// Retrieve all the cities.
+db.city.find({$and:[{"state":"GA"}, {"pop":{$lt:1500}}]});
+
+// Retrieve the number of cities.
+db.city.find({$and:[{"state":"GA"}, {"pop":{$lt:1500}}]}).count();
+
+
+// 1.4. Update all cities from Massachusetts (state: ”MA”), a new field { area : “27 340 km”}.
+db.city.updateMany({state: "MA"}, {$set: {area: 27340}});
+
+// Check that the operations were performed correctly.
+db.city.find({"state": "MA"}, {"_id": "MA", "city": 1, "area": 1});
+
+
+// 1.5. Recover all cities that are located between -81.000001 and 32.915592.
+db.city.find({$and:[{"loc.0": {$gt: -81.000001}}, {"loc.1": {$lt: 32.915592}}]});
+
+
+// 1.6. Update the populations to 75000 for those cities that have a population between 45000 and 50000.
+db.city.updateMany({$and: [{"pop": {$gt: 45000}}, {"pop": {$lt: 50000}}]}, {$set: {"pop": 75000}});

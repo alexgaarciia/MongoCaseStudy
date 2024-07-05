@@ -1,0 +1,146 @@
+db.blogs.insertOne({
+    author: {name: "Mery Garcia", username: "Mery123", twitter: "@merygarcia#", address: "merygarcia@outlook.es", phones: 299258239},
+    posts: 
+	{title: "Data Science Central",
+	 body: "Data Science Central does exactly what its name suggests and acts as an online resource hub for just about everything related to data science and big data. The site covers a wide array of data science topics regarding analytics, technology, tools, data visualization, code, and job opportunities. Industry experts contribute discussion and insights about key topics. The site updates frequently, nearly two blog posts a day from contributing writers, and it also offers a community forum for discussion or questions.",
+	 date: ISODate("2019-05-19T18:42:34Z"),
+	 tags: ['Branding', 'bread', 'Statistical Learning', 'Data Science', 'Finite Automata', 'Turing', 'pies', 'nosql'],
+	 comments: [{
+		 person_username: "chiyembekezo_mohinder",
+		 comment: "I was completely amazed at the quality of the information found in the blog. Extraordinary and amazing!!",
+		 date: ISODate("2021-02-14T12:37:18Z")}]}
+	});
+
+db.blogs.insertOne({
+    author: {name: "Mery Garcia", username: "Mery123", twitter: "@merygarcia#", address: "merygarcia@outlook.es", phones: 299258239},
+    posts: 
+	{title: "Creating a NOSQL Database",
+	 body: "NoSQL databases emerged in the late 2000s as the cost of storage dramatically decreased. Gone were the days of needing to create a complex, difficult-to-manage data model in order to avoid data duplication. Developers (rather than storage) were becoming the primary cost of software development, so NoSQL databases optimized for developer productivity.",
+	 date: ISODate("2019-05-06T19:12:24Z"),
+	 tags: ['database','Python', 'Turing', 'nosql'],
+	 comments: [{
+		 person_username: "alex_123",
+		 comment: "This was very useful!",
+		 date: ISODate("2022-03-11T19:58:55Z")}]}
+	});
+	
+db.blogs.insertOne({
+    author: {name: "Vosgi Beren", username: "Vosgi_Beren_9", twitter: "@vosgiberen#", address: "vosgiberen@gmail.com", phones: [228837994, 228837995, 228837996]}, 
+    posts: 
+	{title: "Exploring Visual Similarity with Modista",
+	 body: "SmartDataCollective.com SmartData Collective is a community site focused on trends in business intelligence and data management. Similar to Data Science Central, it also features insights into data science through contributions by industry experts. Where Data Science Central focuses directly on data science as a whole, SmartData Collective looks at the wider field and how data science can intersect with business.",
+	 date: ISODate("2016-07-03T13:31:47Z"),
+	 tags: ['cookies', 'Automata Theory and Compilers', 'Branding', 'Discrete Mathematics', 'mongoDB', 'nosql', 'Turing', 'Data Science', 'brownies'],
+	 comments: [{
+		 person_username: "hui_darby",
+		 comment: "I do not relate that much to the fact that good grades mean a good future. Totally disagree. Nonetheless, my experience was both amazing and extraordinary reading it. Keep it up.",
+		 date: ISODate("2016-09-12T12:37:18Z")}]}
+	});
+
+db.blogs.insertOne({
+    author:{name: "Devon Tulugaq", username: "Devon_Tulugaq#", twitter: "@devontulugaq45", address: "devontulugaq@hotmail.com", phones: 440104566},
+    posts: 
+	{title: "What's The Big Data?",
+	 body: "WhatsTheBigData.com What's The Big Data? takes a different approach to data science and focuses on the impact of big data’s growth into the digital behemoth it is today. The blog’s founder, Gil Press, is intimately familiar with big data and data science, having spent a career in data research and now running a consulting practice. In his blog, Press explores how big data interacts with our lives and impacts everything from technology to business to government and policy. He provides a source of news and commentary on the sphere of data.",
+	 date: ISODate("2018-07-03T13:31:47Z"),
+	 tags: ['pies', 'Branding'],
+	 comments: [{
+		 person_username: "mudiwa_tivoli",
+		 comment: "It is amazing how much pies can cause you such a degree of diabetes. I do not believe all the information exposed here…any doctor in the comments?",
+		 date: ISODate("2019-09-21T18:11:34Z")}]}
+	});
+
+db.blogs.insertOne({
+    author:{name: "Dusty Keone", username: "Dusty_Keone#", twitter: "@dustykeone45", address: "dustykeone@gmail.com", phones: [689878890, 689878891]},
+    posts: 
+	{title: "insideBIGDATA",
+	 body: "This blog is slightly different than the others, offering a look directly into the minds of data scientists, as well as tutorials and news. This is the blog of the data science website Kaggle, which hosts data science projects and competitions that challenges data scientists to produce the best models for featured data sets. Organizations can post their data problems with a prize amount and data professionals will enter to solve it. Crowdsourcing ensures that the experiments are innovative and interesting—and offer a lot of perspectives to learn from. Over 200 competitions have run, including high profile ones like improving Microsoft Kinect gesture recognition, improving the search for the Higgs boson at CERN, and the notorious Heritage Health $3 million award for improving predictions regarding which patients will need to visit hospitals. Kaggle’s official blog goes deeper into these competitions, offering interviews with the winners to discuss their approach to solving the data science problems. The blog also features news and tutorials for all levels of data science enthusiasts.",
+	 date: ISODate("2019-02-04T17:32:55Z"),
+	 tags: ['Statistical Learning', 'nosql', 'Finite Automata', 'Discrete Mathematics', 'Data Science'],
+	 comments: [{
+		 person_username: "pema_leilani",
+		 comment: "The quality of the information I found in the blog absolutely astounded me. What an extraordinary source of valid info!",
+		 date: ISODate("2020-08-03T18:22:50Z")}]}
+	});
+
+db.blogs.insertOne({
+    author:{name: "Zhi Tiriaq", username: "Zhi_Tiriaq45", twitter: "@zhitiriaq%", address: "zhitiriaq@gmail.com", phones: 292783279},
+    posts: 
+	{title: "No Free Hunch",
+	 body: "InsideBIGDATA focuses on the machine learning side of data science. It covers big data in IT and business, machine learning, deep learning, and artificial intelligence. Guest features offer insight into industry perspectives, while news and Editor’s Choice articles highlight important goings-on in the field. All the articles are neatly categorized by topic to zero in on any subject in particular. The blog also maintains a host of resources for events, jobs, and research reports, and more. This is a resource for anyone wanting to stay up to date with machine learning.",
+	 date: ISODate("2017-03-04T13:31:47Z"),
+	 tags: ['Discrete Mathematics', 'Video Marketing', 'brownies'],
+	 comments: [{
+		 person_username: "ejiro_ailbhe",
+		 comment: "Statistics are like bikinis. What they reveal is suggestive, but what they conceal is vital",
+		 date: ISODate("2018-04-08T18:22:50Z")}]}
+	});
+
+db.blogs.insertOne({
+    author: {name: "Kajal Casey", username: "Kajal_Casey12", twitter: "@kajalcasey_9", address: "kajalcasey@hotmail.com", phones: [885024055, 885024022]},
+    posts: 
+	{title: "Learning MongoDB",
+	 body: "If you can’t get enough of statistics, here’s the blog for you. Run by three biostats professors, they blog about an abundance of statistics in big data and how they are used by data scientists across all kinds of fields—including their own. For any new statisticians looking to jump into the career, they also have interviews with data scientists about their careers and roles in the industry.",
+	 date: ISODate("2021-02-15T18:48:49Z"),
+	 tags: ['nosql', 'Excel', 'Data Science', 'bread', 'Turing', 'Branding', 'Python', 'Signals and Systems'],
+	 comments: [{
+		 person_username: "hinata_takondwa",
+		 comment: "It is very common to find that the data to support many of the business information needs is simply not available at the levels required, or that it is of such bad quality that it is impossible to use. Resolution of these types of issues often requires fundamental changes to business processes.",
+		 date: ISODate("2022-05-27T18:11:34Z")}]}
+	});
+
+db.blogs.insertOne({
+    author: {name: "Kelsey İlkay", username: "Kelsey_İlkay%", twitter: "@kelseyi̇lkay%", address: "kelseyi̇lkay@yahoo.com", phones: 667974752},
+    posts: 
+	{title: "Start with SQL todaySimply Statistics",
+	 body: "Datafloq is run by Mark Van Rijmenam, author of “Think Bigger: Developing a Successful Big Data Strategy for Your Business,” and is a great resource for big data in data science. The blog focuses on the business aspects of big data and how to make data science work for organizations. It also features information about trending tech topics like blockchain and artificial intelligence. While it largely acts as a resource with articles and insights, Datafloq also seeks to connect professionals via job postings, vendors, events, and training.",
+	 date: ISODate("2017-09-13T14:58:24Z"),
+	 tags: ['Video Marketing', 'R Studio', 'Discrete Mathematics', 'Finite Automata', 'brownies', 'Python'],
+	 comments: [{
+		 person_username: "ime_ayanda",
+		 comment: "The world is one extraordinary big data problem.",
+		 date: ISODate("2020-08-10T12:15:59Z")}]}
+	});
+
+db.blogs.insertOne({
+    author: {name: "Ophir Neely", username: "Ophir_Neely$", twitter: "@ophirneely_9", address: "ophirneely@yahoo.com", phones: [607109523, 607109525]},
+    posts: 
+	{title: "Do you know what is a Relational Database?",
+	 body: "For anyone looking to enter the field of data science, here is great—if dense—start. Ryan Swanstrom has worked in data science for Microsoft, Wells Fargo, and government defense contractors. He currently consults as the Director of Data Science for Unify Consulting. In this blog, he shares his valuable experience, tips, and advice on how to be a successful data scientist. The blog extends back to 2012 with extensive archives, which are worth diving into for a hands-on history of the last few years in data science discussion.",
+	 date: ISODate("2017-09-09T13:31:47Z"),
+	 tags: ['cakes', 'Finite Automata'],
+	 comments: [{
+		 person_username: "tatum_chi",
+		 comment: "Consumer data will be the biggest differentiator in the next two to three years. Whoever unlocks the reams of data and uses it strategically will win.",
+		 date: ISODate("2019-09-23T12:15:59Z")}]}
+	});
+
+db.blogs.insertOne({
+    author: {name: "Lerato Esme", username: "Lerato_Esme$", twitter: "@leratoesme45", address: "leratoesme@gmail.com", phones: 255939577},
+    posts: 
+	{title: "Are you afraid of Pharmacies? Should you?",
+	 body: "Dataconomy is another resource for prospective data scientists. It features the usual big data news and tech trends as well as editorials from industry experts. But what sets it apart from the other data science hubs is its resources for building a career in data science. The site offers a free IT research library and beginner’s guides to get started. For those already in the industry and looking to advance, it also has a job board and candidate database.",
+	 date: ISODate("2017-09-09T17:32:55Z"),
+	 tags: ['cookies', 'Signals and Systems', 'Branding', 'R Studio'],
+	 comments: [{
+		 person_username: "kaulana_chisomo",
+		 comment: "That which cannot be measured cannot be proven.",
+		 date: ISODate("2020-04-05T16:18:22Z")}]}
+	});
+
+db.blogs.insertOne({
+    author: {name: "Odell Socheat", username: "Odell_Socheat%", twitter: "@odellsocheat12", address: "odellsocheat@gmail.com", phones: [572149807, 572149866]},
+    posts: 
+	{title: "The Unremarkable Cookie Experience",
+	 body: "Speaking of in-depth resources, Data Science Report curates resources from all variety of formats to get data science into your brain. The site collects free courses, articles, books, videos, and TED Talks to help any level of data scientist. You can filter the topics to find select information regarding how to get started, salary negotiation, interviews, technology, social media, marketing, and topics that are just “simply interesting.” It’s a resource hub for data scientists at any point in their career and anyone with a mind to learn about data.",
+	 date: ISODate("2020-05-15T18:48:49Z"),
+	 tags: ['PowerPoint'],
+	 comments: [{
+		 person_username: "franny_durga",
+		 comment: "Hiding within those mounds of data is the knowledge that could change the life of a patient, or change the world.",
+		 date: ISODate("2021-10-16T16:18:22Z")}]}
+	});
+	
+
+// CHECK THAT INSERTIONS WERE PERFORMED CORRECTLY.
+db.blogs.find();

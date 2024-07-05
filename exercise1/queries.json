@@ -1,0 +1,24 @@
+// QUERIES: Make the following statements:
+// 3.1. Retrieve all blog posts that contain in the 'comment' the values 'amazing' and 'extraordinary'
+// greater than equal to the publication date, the query result should return the fields from author
+// (name, Twitter account), from the blog (title, publication date) and the result sort it ascending.
+db.blogs.find({'posts.comments.comment': {$all: [/amazing/i, /extraordinary/i]}, $expr:{$gte:['$posts.date', '$posts.comments.date']}}, {"_id": 0, "author.name": 1, "author.twitter": 1, "posts.title": 1, "posts.date": 1}).sort({"date": 1});
+
+
+// 3.2. Retrieve at least all blog posts that contain in the values tags such 'Video Marketing', 
+// 'Online Marketing', 'Data Science', 'Branding' and the result sort it ascending.
+db.blogs.find({ $or: [ {"posts.tags": "Video Marketing"}, {"posts.tags": "Online Marketing"}, {"posts.tags": "Data Science"}, {"posts.tags": "Branding"}]}, {"_id": 0}).sort( {"posts.date": 1});
+
+
+// 3.3. Retrieve all blog posts that not contain in the values tags such 'Video Marketing', 
+// 'Online Marketing', 'Data Science', 'Branding' and the result sort it ascending.
+db.blogs.find({"posts.tags": {$nin: ["Video Marketing", "Online Marketing", "Data Science", "Branding"]}}, {"_id": 0}).sort({"posts.date": 1});
+
+
+// 3.4. Retrieve title of the blog posts that have been written in May 2019.
+db.blogs.find({"posts.date":{$gte:ISODate('2019-05-01'),$lt:ISODate('2019-05-31')}}, {'_id':0, 'posts.title':1});
+
+
+// 3.5. Retrieve title of the blog posts that have been written by the user with username "Mery123" 
+// with any of the tags: "nosql", "database" or "mongoDB", and published in 2019.
+db.blogs.find({$and: [{"author.username": "Mery123"}, {"posts.date": {$gte:ISODate('2019-01-01'),$lt:ISODate('2019-12-31')}}, {$or: [{"posts.tags": "nosql"}, {"posts.tags": "database"}, {"posts.tags": "mongoDB"}]}]},  {"_id": 0,'posts.title':1});
